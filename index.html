@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video teste</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OceanTech</title>
+    <link rel="stylesheet" href="./src/css/style.css"/>
+  </head>
+
+  <body>
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="./src/video/ocean.mp4" type="video/mp4" />
+      </video>
+    </div>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="./src/img/logo.png" alt="Logo"></a>
+      <nav>
+        <a class="logo" href="index.html"><img src="./src/img/logo.png" alt=""></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="problema.html">Problema</a></li>
-                <li><a href="tec.html">Tecnologia</a></li>
-                <li><a href="obj.html">Objetivos</a></li>
-                <li><a href="publico.html">Público</a></li>
-                <li><a href="beneficios.html">Benefícios</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-list">
+          <li><a href="problema.html">Problema</a></li>
+          <li><a href="tec.html">Tecnologia</a></li>
+          <li><a href="obj.html">Objetivo</a></li>
+          <li><a href="publico.html">Público</a></li>
+          <li><a href="beneficios.html">Benefícios</a></li>
+        </ul>
+      </nav>
     </header>
-    <div class="banner">
-        <video autoplay muted loop>
-            <source src="./src/video/ocean.mp4" type="video/mp4">
-        </video>
-        <div class="conteudo">
+    <main>
+        <div class="content">
+            <h2>Acesso ao Github</h2>
             <a href="https://github.com/gvqsilva" target="_blank"><img src="./src/img/git2.png" alt="Imagem do github do Gabriel Vasquez"></a>
             <a href="https://github.com/Gusta346" target="_blank"><img src="./src/img/git1.png" alt="Imagem do github do Gustavo Oliveira"></a>
         </div>
-    </div>
-    
-</body>
+    </main>
+    <script src="./src/script/script.js"></script>
+  </body>
 </html>
