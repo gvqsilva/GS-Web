@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benefícios</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./src/css/style.css"/>
   </head>
 
@@ -22,13 +22,28 @@
           <li><a href="tec.html">Tecnologia</a></li>
           <li><a href="obj.html">Objetivo</a></li>
           <li><a href="publico.html">Público</a></li>
-          <li><a href="beneficios.html">Benefícios</a></li>
           <li><a href="impacto.html">Impacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <h2 id="hlogin">Login</h2>
+      <p id="plogin">Realize o login para responder o quiz</p>
+      <form id="form-login">
+        <p class="um">
+          Usuario:
+          <input type="text" placeholder="Digite seu usuario" id="usuario">
+        </p>
+        <p class="um">
+          Senha:
+          <input type="password" placeholder="Digite a senha" id="senha">
+        </p>
+        <button id="btn-login" onclick="validar()">Login</button>
+    </form>
     </main>
-    <script src="./src/script/pags.js"></script>
+    <footer>
+      <p>&copy; 2024 OceanTech. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./src/script/login.js"></script>
   </body>
 </html>

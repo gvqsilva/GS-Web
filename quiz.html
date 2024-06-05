@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./src/css/style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html"><img src="./src/img/logo.png" alt=""></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="problema.html">Problema</a></li>
+          <li><a href="tec.html">Tecnologia</a></li>
+          <li><a href="obj.html">Objetivo</a></li>
+          <li><a href="publico.html">Público</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="container">
+            <fieldset id="h1-quiz">
+                <legend>Quiz sobre preservação do ambiente marinho</legend>
+                <button onclick="startQuiz()">Iniciar Quiz</button>
+            </fieldset>
+        </div>
+        <script>
+            function startQuiz() {
+                var questions = [
+                    {
+                        question: "1- Qual a importância dos recifes de coral para a biodiversidade marinha e suas ameaças atuais?",
+
+                        options: ["a) Abrigam muitas espécies marinhas; aquecimento global, poluição, pesca excessiva, acidificação dos oceanos.", 
+                        "b) Importantes para turismo; poluição, aquecimento global.", 
+                        "c) Sem importância significativa; pesca excessiva, acidificação dos oceanos.", 
+                        "d) Protegem as costas; aquecimento global, poluição."],
+                        answer: "a"
+                    },
+                    {
+                        question: "2- Como a poluição por plástico nos oceanos afeta a vida marinha e quais são algumas estratégias eficazes para reduzir essa poluição?",
+
+                        options: ["a) Ajuda na sobrevivência dos peixes; não fazer nada.", 
+                        "b) Aumenta saúde dos oceanos; mais plástico descartável.", 
+                        "c) Animais ingerem ou prendem; menos plástico, mais reciclagem, limpeza praias.", 
+                        "d) Não afeta; menos reciclagem, limpeza."],
+                        answer: "c"
+                    },
+                    {
+                        question: "3- De que maneira os impactos das mudanças climáticas nos ecossistemas marinhos e ações para mitigá-los?",
+
+                        options: ["a) Aquecem os oceanos, acidificam a água, elevam o nível do mar; reduzir emissões de gases estufa", 
+                        "b)  Resfriam os oceanos, reduzem o nível do mar; aumentar emissões de gases estufa.", 
+                        "c) Tornam oceanos mais saudáveis; proteger áreas marinhas.", 
+                        "d) Sem impacto significativo; não agir."],
+                        answer: "a"
+                    },
+                    {
+                        question: "4- Quais são os Benefícios das áreas marinhas protegidas (AMPs) e sua contribuição para a conservação marinha?",
+
+                        options: ["a) Protegem apenas habitats terrestres; não contribuem para conservação marinha.", 
+                        "b) Reduzem biodiversidade; promovem pesca excessiva.", 
+                        "c) Não têm benefícios; aumentam a poluição.", 
+                        "d) Protegem habitats, permitem recuperação de espécies; limitam atividades destrutivas."],
+                        answer: "d"
+                    },
+                    {
+                        question: "5- Como a pesca sustentável pode ajudar a preservar a vida marinha e quais práticas pesqueiras são consideradas sustentáveis?",
+
+                        options: ["a) Reduzem a saúde das populações de peixes; capturar todas as espécies.", 
+                        "b) Mantêm populações de peixes saudáveis; evitar captura de espécies em risco, usar métodos de pesca não destrutivos.", 
+                        "c) Não têm impacto na preservação; usar métodos destrutivos.", 
+                        "d) Aumentam a destruição dos habitats marinhos; respeitar as cotas de captura."],
+                        answer: "b"
+                    }
+                ];
+    
+                var score = 0;
+    
+                for (var i = 0; i < questions.length; i++) {
+                    var question = questions[i];
+                    var userAnswer = prompt(question.question + "\n" + question.options.join("\n"));
+                    
+                    if (userAnswer.toLowerCase() === question.answer) {
+                        score++;
+                    }
+                }
+    
+                alert("Você acertou " + score + " de " + questions.length + " perguntas.");
+            }
+        </script>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 OceanTech. Todos os direitos reservados.</p>
+      </footer>
+    <script src="./src/script/pags.js"></script>
+  </body>
+</html>
