@@ -141,3 +141,68 @@ nav {
   margin: 10px;
   border-radius: 15%;
 }
+
+
+
+/*config. slide carousel*/
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 11%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+/*Config. geral das demais paginas*/
+h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1%;
+}
+
+.textos p{
+  margin-top: 1%;
+  margin-left: 2%;
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
