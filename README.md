@@ -35,6 +35,9 @@
 <h2 id="hospedagem">Hospedagem no GitHub Pages</h2>
 <p>A Landing Page está hospedada no GitHub Pages e pode ser acessada através do seguinte link: https://gvqsilva.github.io/GS-Web/</p>
 
+<h2 id="final">Considerações Finais</h2>
+<p>Esta Landing Page é uma solução proposta para o Desafio de "Inovação Azul" 2024, visando aumentar a conscientização e promover ações sustentáveis para a preservação dos oceanos. Esperamos que a apresentação clara e visualmente atraente desta solução inspire ações positivas e contribua para a saúde dos nossos oceanos.</p>
+
 <h2 id="Autores">Autores</h2>
 
 <div align="center">
