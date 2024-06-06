@@ -1,9 +1,3 @@
-// Alerta na página principal
-window.onload = function() {
-  alert("Seja bem-vindo à OceanTech!");
-}
-
-
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
