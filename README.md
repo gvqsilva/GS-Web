@@ -9,6 +9,7 @@
 * [Estrutura do site](#estrutura)
 * [Requisitos Técnicos](#requisitos)
 * [Git Pages](#hospedagem)
+* [Considerações Finais](#final)
 * [Autores](#autores)
 
 
