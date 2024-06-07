@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap");
 
 :root{
-  
+  --cor-principal:#007d96b0;
+  --branco-principal:#fff;
+  --branco-secundario:#ffff;
+  --azul-principal:#007bff;
+  --verde-principal:#4CAF50;
+
+
 }
 
 * {
@@ -34,7 +40,7 @@ header {
   position: relative;
   z-index: 1;
   width: 100%;
-  background: rgba(0, 0, 0, 0.753);
+  background: var(--cor-principal);
 }
 
 nav {
@@ -42,14 +48,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  color: #fff;
+  color: var(--branco-principal);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: var(--branco-principal);
 }
 
 .logo img{
@@ -64,7 +70,7 @@ nav {
 
 .nav-list li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--branco-principal);
   font-size: 1.5rem;
   margin: 20px;
 }
@@ -82,7 +88,7 @@ nav {
 .mobile-menu div {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: var(--branco-principal);
   margin: 4px;
   transition: all 0.3s;
 }
@@ -124,13 +130,13 @@ nav {
 #bem{
   margin-top: 1%;
   font-size: 5rem;
-  color: white;
+  color: var(--branco-principal);
   text-align: center;
 }
 
 #vindo{
   font-size: 5rem;
-  color: #007bff;
+  color: var(--azul-principal);
   font-style: normal;
 }
 
@@ -147,11 +153,11 @@ nav {
   margin-top: 240px;
   font-size: 3em;
   text-transform: uppercase;
-  color: #ffff;
+  color:var(--branco-secundario);
 }
 .content p {
   font-size: 1.5em;
-  color: #ffff;
+  color: var(--branco-secundario);
 }
 .content img {
   width: 60px;
@@ -195,7 +201,7 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--branco-principal);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -245,19 +251,19 @@ strong{
 
 footer {
   background-color: var(--cor-principal);
-  color: white;
+  color: var(--branco-principal);
   text-align: center;
   padding: 1rem;
   bottom: 0;
   width: 100%;
-  background-color: #007d96b0;
+  background-color: var(--cor-principal);
   margin-top: 3%;
 }
 
 /*Pagina login*/
 
 #form-login {
-  background-color: #ffffff;
+  background-color: var(--branco-principal);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -291,15 +297,15 @@ input[type="text"], input[type="password"] {
   transition: border-color 0.3s;
 }
 input[type="text"]:focus, input[type="password"]:focus {
-  border-color: #007bff;
+  border-color: var(--azul-principal);
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 #btn-login {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--azul-principal);
+  color: var(--branco-secundario);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -343,16 +349,16 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 fieldset {
-  border: 2px solid #4CAF50;
+  border: 2px solid var(--verde-principal);
   border-radius: 10px;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--branco-principal);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 legend {
   font-size: 1.5em;
-  color: #4CAF50;
+  color: var(--verde-principal);
   padding: 0 10px;
 }
 
@@ -360,8 +366,8 @@ button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1em;
-  color: #fff;
-  background-color: #4CAF50;
+  color: var(--branco-principal);
+  background-color: var(--verde-principal);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -369,5 +375,5 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #39753c;
 }
