@@ -260,6 +260,17 @@ footer {
   margin-top: 3%;
 }
 
+.rodape_inicial{
+  background-color: transparent;
+  color: var(--branco-principal);
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 3%;
+}
+
 /*Pagina login*/
 
 #form-login {
